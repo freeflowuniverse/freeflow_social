@@ -56,6 +56,8 @@ Rails.application.configure do
 
   config.i18n.default_locale = :en
   config.i18n.fallbacks = true
+
+  config.signing_key = ENV["THREEBOT_KEY"] || Base64.strict_encode64(RbNaCl::SigningKey.generate.to_s)
 end
 
 Paperclip::Attachment.default_options[:path] = "#{Rails.root}/spec/test_files/:class/:id_partition/:style.:extension"

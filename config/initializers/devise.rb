@@ -1,3 +1,5 @@
+require 'omniauth/strategies/threefold'
+
 Warden::Manager.after_set_user except: :fetch do |user, warden|
   if user.session_active?(warden.cookies.signed['_session_id'] || warden.raw_session['auth_id'])
     session_id = warden.cookies.signed['_session_id'] || warden.raw_session['auth_id']
@@ -328,7 +330,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+  config.omniauth :threefold, Rails.application.config.signing_key, [:user, :email]
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

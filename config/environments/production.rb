@@ -112,4 +112,6 @@ Rails.application.configure do
   }
 
   config.x.otp_secret = ENV.fetch('OTP_SECRET')
+
+  config.signing_key = ENV["THREEBOT_KEY"] || Base64.strict_encode64(RbNaCl::SigningKey.generate.to_s)
 end

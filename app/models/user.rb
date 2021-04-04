@@ -42,6 +42,8 @@
 #  sign_in_token_sent_at     :datetime
 #  webauthn_id               :string
 #  sign_up_ip                :inet
+#  provider                  :string
+#  uid                       :string
 #
 
 class User < ApplicationRecord
