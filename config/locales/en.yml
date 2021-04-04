@@ -773,6 +773,7 @@ en:
     too_fast: Form submitted too fast, try again.
     trouble_logging_in: Trouble logging in?
     use_security_key: Use security key
+    already_registered: Already have an account? you can login and start using mastodon right now!
   authorize_follow:
     already_following: You are already following this account
     already_requested: You have already sent a follow request to that account
