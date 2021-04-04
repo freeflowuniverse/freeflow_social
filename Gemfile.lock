@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/RubyCrypto/rbnacl.git
+  revision: 3fb9eb25f3e08d98f4a5b1beb787b0812cad6d7f
+  ref: 3fb9eb2
+  specs:
+    rbnacl (7.1.1)
+      ffi
+
+GIT
   remote: https://github.com/ianheggie/health_check
   revision: 0b799ead604f900ed50685e9b2d469cd2befba5b
   ref: 0b799ead604f900ed50685e9b2d469cd2befba5b
@@ -771,6 +779,7 @@ DEPENDENCIES
   rails-controller-testing (~> 1.0)
   rails-i18n (~> 5.1)
   rails-settings-cached (~> 0.6)
+  rbnacl!
   rdf-normalize (~> 0.4)
   redis (~> 4.2)
   redis-namespace (~> 1.8)
@@ -805,3 +814,9 @@ DEPENDENCIES
   webpacker (~> 5.2)
   webpush
   xorcist (~> 1.1)
+
+RUBY VERSION
+   ruby 2.7.2p137
+
+BUNDLED WITH
+   2.1.4
