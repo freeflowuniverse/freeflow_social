@@ -754,6 +754,7 @@ en:
     providers:
       cas: CAS
       saml: SAML
+      threefold: Threefold Connect
     register: Sign up
     registration_closed: "%{instance} is not accepting new members"
     resend_confirmation: Resend confirmation instructions
