@@ -21,6 +21,20 @@ Click below to **learn more** in a video:
 
 [youtube_demo]: https://www.youtube.com/watch?v=IPSbNdBmWKE
 
+## How to build our image
+
+we use the offcial [Dockerfile](https://github.com/crystaluniverse/tf-mastodon/blob/v3.3.0.tf/Dockerfile) to build the image 
+
+```
+docker build -t repo_name/image_name:tag . 
+```
+
+then we push the tagged image
+
+```
+docker push repo_name/image_name:tag
+```
+
 ## Navigation
 
 - [Project homepage 🐘](https://joinmastodon.org)
