@@ -266,6 +266,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.12.11.tgz#c9a1f021917dcb5ccf0d4e453e399022981fc9ed"
   integrity sha512-np/lG3uARFybkoHokJUmf1QfEvRVCPbmQeUQpKow5cQ3xWrV9i3rUHodKDJPQfTVX61qKi+UdYk8kik84n7XOw==
 
+"@babel/helper-validator-identifier@^7.14.9":
+  version "7.15.7"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.15.7.tgz#220df993bfe904a4a6b02ab4f3385a5ebf6e2389"
+  integrity sha512-K4JvCtQqad9OY2+yTU8w+E82ywk/fe+ELNlt1G8z3bVGlZfn/hOcQQsUhGhW/N+tb3fxK800wLtKOE/aM0m72w==
+
 "@babel/helper-validator-option@^7.12.17":
   version "7.12.17"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.12.17.tgz#d1fbf012e1a79b7eebbfdc6d270baaf8d9eb9831"
@@ -984,6 +989,14 @@
   dependencies:
     "@babel/helper-validator-identifier" "^7.12.11"
     lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.12.5":
+  version "7.15.6"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.15.6.tgz#99abdc48218b2881c058dd0a7ab05b99c9be758f"
+  integrity sha512-BPU+7QhqNjmWyDO0/vitH/CuhpV8ZmK1wpKva8nuyNF5MJfuRNWMc+hc14+u9xT93kvykMdncrJT19h74uB1Ig==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
 "@bcoe/v8-coverage@^0.2.3":
@@ -2183,10 +2196,10 @@ babel-jest@^26.6.3:
     graceful-fs "^4.2.4"
     slash "^3.0.0"
 
-babel-loader@^8.2.2:
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.2.tgz#9363ce84c10c9a40e6c753748e1441b60c8a0b81"
-  integrity sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g==
+babel-loader@^8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.2.3.tgz#8986b40f1a64cacfcb4b8429320085ef68b1342d"
+  integrity sha512-n4Zeta8NC3QAsuyiizu0GkmRcQ6clkV9WFUnUf1iXP//IeSKbWjofW3UHyZVwlOB4y039YQKefawyTn64Zwbuw==
   dependencies:
     find-cache-dir "^3.3.1"
     loader-utils "^1.4.0"
