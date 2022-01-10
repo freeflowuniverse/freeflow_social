@@ -126,7 +126,7 @@ group :test do
   gem 'simplecov', '~> 0.21', require: false
   gem 'webmock', '~> 3.12'
   gem 'parallel_tests', '~> 3.5'
-  gem 'rspec_junit_formatter', '~> 0.4'
+  gem 'rspec_junit_formatter', '~> 0.5'
 end
 
 group :development do
